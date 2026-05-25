@@ -213,6 +213,7 @@
     .gh-url-copy{margin-top:8px;font-size:.75rem;}
   </style>
 <script>var EXPORTED_PLAN={"dest":"유럽(런던,노르웨이)","title":"2026 유럽","people":"2","days":[{"id":"day_1","title":"","date":"","items":[],"photos":[],"collapsed":false}],"betweenDividers":{}};var EXPORTED_MEMO=[{"id":"note_1","title":"","content":"","checklist":[],"photos":[]}];</script>
+<script>var EXPORTED_PLAN={"dest":"유럽(런던,노르웨이)","title":"2026 유럽","people":"2","days":[{"id":"day_1","title":"","date":"","items":[],"photos":[],"collapsed":false}],"betweenDividers":{}};var EXPORTED_MEMO=[{"id":"note_1","title":"","content":"","checklist":[],"photos":[]}];</script>
 </head>
 <body>
 
@@ -238,13 +239,9 @@
 <!-- PROJECT TABS -->
 <div class="project-bar">
   <div class="project-scroll" id="project-tabs">
-    <div class="project-tab " onclick="activateProject('proj_2',false)" ondblclick="renameProjectPrompt('proj_2')">
-      ✈️ 새 여행
-      <button class="project-tab-x" onclick="event.stopPropagation();deleteProject('proj_2')">✕</button>
-    </div>
-    <div class="project-tab active" onclick="activateProject('proj_3',false)" ondblclick="renameProjectPrompt('proj_3')">
+    <div class="project-tab active" onclick="activateProject('proj_1',false)" ondblclick="renameProjectPrompt('proj_1')">
       ✈️ 2026 유럽
-      <button class="project-tab-x" onclick="event.stopPropagation();deleteProject('proj_3')">✕</button>
+      <button class="project-tab-x" onclick="event.stopPropagation();deleteProject('proj_1')">✕</button>
     </div><button class="project-add" onclick="createProject()" title="여행 추가">＋</button></div>
 </div>
 
@@ -327,8 +324,8 @@
   </div>
 </div>
 
-<div class="save-status" id="save-status">저장되었습니다 ✓</div>
-<div class="toast" id="toast"></div>
+<div class="save-status show" id="save-status">저장되었습니다 ✓</div>
+<div class="toast" id="toast">📂 저장된 일정을 불러왔습니다</div>
 
 
 <!-- GITHUB MODAL -->
