@@ -213,7 +213,7 @@
     .gh-url-copy{margin-top:8px;font-size:.75rem;}
   </style>
 <script>var EXPORTED_PLAN={"dest":"유럽(런던,노르웨이)","title":"2026 유럽","people":"2","days":[{"id":"day_1","title":"","date":"","items":[],"photos":[],"collapsed":false}],"betweenDividers":{}};var EXPORTED_MEMO=[{"id":"note_1","title":"","content":"","checklist":[],"photos":[]}];</script>
-<script>var EXPORTED_PLAN={"dest":"유럽(런던,노르웨이)","title":"2026 유럽","people":"2","days":[{"id":"day_1","title":"","date":"","items":[],"photos":[],"collapsed":false}],"betweenDividers":{}};var EXPORTED_MEMO=[{"id":"note_1","title":"","content":"","checklist":[],"photos":[]}];</script>
+<script>var EXPORTED_PLAN={"dest":"유럽(런던,노르웨이)","title":"2026 유럽","people":"2","days":[{"id":"day_1","title":"","date":"2026-07-04","items":[{"id":"item_1","time":"","name":"","memo":"","type":"tour","photos":[]},{"id":"item_2","time":"","name":"","memo":"","type":"tour","photos":[]}],"photos":[],"collapsed":false},{"id":"day_3","title":"","date":"2026-07-05","items":[],"photos":[],"collapsed":false},{"id":"day_4","title":"","date":"2026-07-06","items":[{"id":"item_3","time":"","name":"ddd","memo":"","type":"tour","photos":[]}],"photos":[],"collapsed":false}],"betweenDividers":{}};var EXPORTED_MEMO=[{"id":"note_1","title":"","content":"","checklist":[],"photos":[]}];</script>
 </head>
 <body>
 
@@ -264,7 +264,7 @@
     <div class="day-header" id="dh-day_1">
       <span class="day-drag-handle" id="dh-handle-day_1" draggable="true">::</span>
       <span class="day-number">Day 1</span>
-      <input type="date" class="day-date-input" value="" data-dayid="day_1" onchange="onDayDateChange(this)">
+      <input type="date" class="day-date-input" value="2026-07-04" data-dayid="day_1" onchange="onDayDateChange(this)">
       <input type="text" class="day-title-input" value="" placeholder="지역 / 테마" data-dayid="day_1" oninput="onDayTitleChange(this)">
       <div class="day-header-actions">
         <button class="btn-icon" onclick="toggleCollapse('day_1')">▲</button>
@@ -272,7 +272,67 @@
       </div>
     </div>
     <div class="schedule-list " id="sl-day_1" data-dayid="day_1">
-      <div class="empty-schedule">일정을 추가해 보세요</div>
+      
+    <div class="schedule-item" data-itemid="item_1" data-type="tour" draggable="true">
+      <div class="item-row1">
+        <span class="item-drag-handle">::</span>
+        <div class="item-time"><input type="text" value="" placeholder="10:00" oninput="onItemChange('day_1','item_1','time',this.value)" maxlength="5"></div>
+        <div class="item-body">
+          <div class="item-name"><input type="text" value="" placeholder="장소 / 활동 이름" oninput="onItemChange('day_1','item_1','name',this.value)"></div>
+          <div class="item-memo"><input type="text" value="" placeholder="메모" oninput="onItemChange('day_1','item_1','memo',this.value)"></div>
+          <div class="item-type">
+            <select onchange="onItemChange('day_1','item_1','type',this.value)">
+              <option value="tour" selected="">관광</option>
+              <option value="food">식사</option>
+              <option value="move">이동</option>
+              <option value="hotel">숙소</option>
+              <option value="free">자유</option>
+            </select>
+          </div>
+        </div>
+        <div class="item-actions">
+          <label class="item-photo-btn" title="사진">📷<input type="file" accept="image/*" multiple="" onchange="onItemPhotoUpload(event,'day_1','item_1')"></label>
+          <button class="item-photo-btn" onclick="toggleItemPaste('day_1','item_1')">📋</button>
+          <button class="item-del-btn" onclick="deleteItem('day_1','item_1')">✕</button>
+        </div>
+      </div>
+      <div id="ipz-item_1" style="display:none;margin-top:5px;">
+        <div class="paste-zone" tabindex="0" onclick="this.focus()" onpaste="handlePaste(event,'item','day_1','item_1')">
+          📋 클릭 후 <span class="kbd">Ctrl+V</span>
+        </div>
+      </div>
+      
+    </div>
+    <div class="schedule-item" data-itemid="item_2" data-type="tour" draggable="true">
+      <div class="item-row1">
+        <span class="item-drag-handle">::</span>
+        <div class="item-time"><input type="text" value="" placeholder="10:00" oninput="onItemChange('day_1','item_2','time',this.value)" maxlength="5"></div>
+        <div class="item-body">
+          <div class="item-name"><input type="text" value="" placeholder="장소 / 활동 이름" oninput="onItemChange('day_1','item_2','name',this.value)"></div>
+          <div class="item-memo"><input type="text" value="" placeholder="메모" oninput="onItemChange('day_1','item_2','memo',this.value)"></div>
+          <div class="item-type">
+            <select onchange="onItemChange('day_1','item_2','type',this.value)">
+              <option value="tour" selected="">관광</option>
+              <option value="food">식사</option>
+              <option value="move">이동</option>
+              <option value="hotel">숙소</option>
+              <option value="free">자유</option>
+            </select>
+          </div>
+        </div>
+        <div class="item-actions">
+          <label class="item-photo-btn" title="사진">📷<input type="file" accept="image/*" multiple="" onchange="onItemPhotoUpload(event,'day_1','item_2')"></label>
+          <button class="item-photo-btn" onclick="toggleItemPaste('day_1','item_2')">📋</button>
+          <button class="item-del-btn" onclick="deleteItem('day_1','item_2')">✕</button>
+        </div>
+      </div>
+      <div id="ipz-item_2" style="display:none;margin-top:5px;">
+        <div class="paste-zone" tabindex="0" onclick="this.focus()" onpaste="handlePaste(event,'item','day_1','item_2')">
+          📋 클릭 후 <span class="kbd">Ctrl+V</span>
+        </div>
+      </div>
+      
+    </div>
     </div>
     <div class="add-item-row">
       <button class="btn btn-ghost btn-sm" onclick="addItem('day_1')">＋ 일정</button>
@@ -285,7 +345,93 @@
         📋 클릭 후 <span class="kbd">Ctrl+V</span>
       </div>
     </div>
-    <div class="photo-grid day-photos-grid" id="day-photos-day_1"></div></div></div>
+    <div class="photo-grid day-photos-grid" id="day-photos-day_1"></div></div><div class="between-divider" data-bd-key="day_1__day_3">
+      <div class="between-divider-line"></div>
+      <button class="between-divider-add" onclick="addBetweenDivider('day_1__day_3')">＋</button>
+      <div class="between-divider-line"></div></div><div class="day-card" data-day-id="day_3">
+    <div class="day-header" id="dh-day_3">
+      <span class="day-drag-handle" id="dh-handle-day_3" draggable="true">::</span>
+      <span class="day-number">Day 2</span>
+      <input type="date" class="day-date-input" value="2026-07-05" data-dayid="day_3" onchange="onDayDateChange(this)">
+      <input type="text" class="day-title-input" value="" placeholder="지역 / 테마" data-dayid="day_3" oninput="onDayTitleChange(this)">
+      <div class="day-header-actions">
+        <button class="btn-icon" onclick="toggleCollapse('day_3')">▲</button>
+        <button class="btn-icon" onclick="deleteDay('day_3')">✕</button>
+      </div>
+    </div>
+    <div class="schedule-list " id="sl-day_3" data-dayid="day_3">
+      <div class="empty-schedule">일정을 추가해 보세요</div>
+    </div>
+    <div class="add-item-row">
+      <button class="btn btn-ghost btn-sm" onclick="addItem('day_3')">＋ 일정</button>
+      <button class="btn btn-ghost btn-sm" onclick="addDivider('day_3')">— 구분선</button>
+      <label class="photo-upload-label">📷<input type="file" accept="image/*" multiple="" onchange="onDayPhotoUpload(event,'day_3')"></label>
+      <button class="btn btn-ghost btn-sm" onclick="toggleDayPaste('day_3')">📋</button>
+    </div>
+    <div id="dpz-day_3" style="display:none;padding:0 12px 8px;">
+      <div class="paste-zone" tabindex="0" onclick="this.focus()" onpaste="handlePaste(event,'day','day_3','')">
+        📋 클릭 후 <span class="kbd">Ctrl+V</span>
+      </div>
+    </div>
+    <div class="photo-grid day-photos-grid" id="day-photos-day_3"></div></div><div class="between-divider" data-bd-key="day_3__day_4">
+      <div class="between-divider-line"></div>
+      <button class="between-divider-add" onclick="addBetweenDivider('day_3__day_4')">＋</button>
+      <div class="between-divider-line"></div></div><div class="day-card" data-day-id="day_4">
+    <div class="day-header" id="dh-day_4">
+      <span class="day-drag-handle" id="dh-handle-day_4" draggable="true">::</span>
+      <span class="day-number">Day 3</span>
+      <input type="date" class="day-date-input" value="2026-07-06" data-dayid="day_4" onchange="onDayDateChange(this)">
+      <input type="text" class="day-title-input" value="" placeholder="지역 / 테마" data-dayid="day_4" oninput="onDayTitleChange(this)">
+      <div class="day-header-actions">
+        <button class="btn-icon" onclick="toggleCollapse('day_4')">▲</button>
+        <button class="btn-icon" onclick="deleteDay('day_4')">✕</button>
+      </div>
+    </div>
+    <div class="schedule-list " id="sl-day_4" data-dayid="day_4">
+      
+    <div class="schedule-item" data-itemid="item_3" data-type="tour" draggable="true">
+      <div class="item-row1">
+        <span class="item-drag-handle">::</span>
+        <div class="item-time"><input type="text" value="" placeholder="10:00" oninput="onItemChange('day_4','item_3','time',this.value)" maxlength="5"></div>
+        <div class="item-body">
+          <div class="item-name"><input type="text" value="" placeholder="장소 / 활동 이름" oninput="onItemChange('day_4','item_3','name',this.value)"></div>
+          <div class="item-memo"><input type="text" value="" placeholder="메모" oninput="onItemChange('day_4','item_3','memo',this.value)"></div>
+          <div class="item-type">
+            <select onchange="onItemChange('day_4','item_3','type',this.value)">
+              <option value="tour" selected="">관광</option>
+              <option value="food">식사</option>
+              <option value="move">이동</option>
+              <option value="hotel">숙소</option>
+              <option value="free">자유</option>
+            </select>
+          </div>
+        </div>
+        <div class="item-actions">
+          <label class="item-photo-btn" title="사진">📷<input type="file" accept="image/*" multiple="" onchange="onItemPhotoUpload(event,'day_4','item_3')"></label>
+          <button class="item-photo-btn" onclick="toggleItemPaste('day_4','item_3')">📋</button>
+          <button class="item-del-btn" onclick="deleteItem('day_4','item_3')">✕</button>
+        </div>
+      </div>
+      <div id="ipz-item_3" style="display:none;margin-top:5px;">
+        <div class="paste-zone" tabindex="0" onclick="this.focus()" onpaste="handlePaste(event,'item','day_4','item_3')">
+          📋 클릭 후 <span class="kbd">Ctrl+V</span>
+        </div>
+      </div>
+      
+    </div>
+    </div>
+    <div class="add-item-row">
+      <button class="btn btn-ghost btn-sm" onclick="addItem('day_4')">＋ 일정</button>
+      <button class="btn btn-ghost btn-sm" onclick="addDivider('day_4')">— 구분선</button>
+      <label class="photo-upload-label">📷<input type="file" accept="image/*" multiple="" onchange="onDayPhotoUpload(event,'day_4')"></label>
+      <button class="btn btn-ghost btn-sm" onclick="toggleDayPaste('day_4')">📋</button>
+    </div>
+    <div id="dpz-day_4" style="display:none;padding:0 12px 8px;">
+      <div class="paste-zone" tabindex="0" onclick="this.focus()" onpaste="handlePaste(event,'day','day_4','')">
+        📋 클릭 후 <span class="kbd">Ctrl+V</span>
+      </div>
+    </div>
+    <div class="photo-grid day-photos-grid" id="day-photos-day_4"></div></div></div>
   <button class="btn btn-add-day" onclick="addDay()">＋ 날짜 추가</button>
 </div>
 
@@ -325,7 +471,7 @@
 </div>
 
 <div class="save-status show" id="save-status">저장되었습니다 ✓</div>
-<div class="toast" id="toast">🔗 URL 복사됨!</div>
+<div class="toast" id="toast">☁️ GitHub Pages 업로드 완료!</div>
 
 
 <!-- GITHUB MODAL -->
